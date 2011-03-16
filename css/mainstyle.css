@@ -1,0 +1,179 @@
+/**********
+* Editor: Qianlong
+* Date:
+***********/
+body{
+    background: #8b9eb1;
+    margin: 0px;
+    padding: 0px;
+    border: 4px ridge #EEEEEE;
+}
+li{
+    list-style: none;
+}
+
+
+#toolbar{
+    background-image: url('/images/toolbar.png');
+    background-repeat: repeat-x;    
+    height: 33px;
+}
+#toolbar ul{
+    margin: 0px;
+    padding: 0px;
+}
+/********* buttons *************/
+#toolbar ul li{
+    margin: 2px 0px 0px 0px;
+    float: left;   
+    height: 30px;
+    width: 30px;
+    display:block;
+}
+#toolbar .button{
+    height: 30px;
+    display:block;
+    width: 30px;
+}
+#toolbar .button:hover{
+    background-color: #81BEF7;
+}
+#toolbar .button:active{
+    margin: 2px auto;
+    background-color: #0101DF;
+}
+
+#gras{
+    background: url('/images/buttons1.png') no-repeat top left;    
+}
+#italic{
+    background: url('/images/buttons1.png') no-repeat -30px top;
+}
+#souligner{
+    background: url('/images/buttons1.png') no-repeat -60px top;
+}
+#flushleft{
+    background: url('/images/buttons1.png') no-repeat -92px top;
+}
+#center{
+    background: url('/images/buttons1.png') no-repeat -123px top;
+}
+#flushright{
+    background: url('/images/buttons1.png') no-repeat -155px top;
+}
+#nouvelle_ligne{
+    background: url('/images/newline.png') no-repeat left top;
+}
+#pdflatex{
+    background: url('/images/buttons4.png') no-repeat -260px top;
+}
+#afficherpdf{
+    background: url('/images/buttons4.png') no-repeat right top;
+}
+#fx{
+    background: url('/images/buttons3.png') no-repeat left top;
+}
+#indice{
+    background: url('/images/buttons3.png') no-repeat -30px top;
+}
+#exposant{
+    background: url('/images/buttons3.png') no-repeat -60px top;
+}
+#frac{
+    background: url('/images/buttons3.png') no-repeat -92px top;
+}
+#dfrac{
+    background: url('/images/buttons3.png') no-repeat -123px top;
+}
+#sqrt{
+    background: url('/images/buttons3.png') no-repeat -155px top;
+}
+
+/********* drop menu ***********/
+#toolbar ul li ul{
+    display: none;
+}
+#toolbar .menu{
+    height: 30px;
+    display: block;
+    width: 108px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    color: #FFF;
+}
+#toolbar .drop{
+    vertical-align: middle;
+}
+#toolbar ul li.menu:hover{
+    background-color: #81BEF7;
+}
+#toolbar ul li:hover ul{
+    display: block;
+    position: relative;
+}
+#toolbar ul li ul li{
+    margin: 0px;
+    width: 108px;
+    text-align:left;
+}
+#toolbar ul li ul li a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 0.8em;
+    line-height: 29px;
+    width: 108px;
+    margin: 0px;
+    padding: 0px 0px 0px 8px;
+    display: block;
+    border-right: solid 1px #ccc;
+    border-bottom:solid 1px #ccc;
+    background: #445361;
+}
+#toolbar ul li ul li a:hover{
+    background: #FFF;
+    color: #445361;
+}
+#nouveau{
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    cursor:pointer;
+}
+#nouveau:hover{
+    background-color: #81BEF7;
+}
+
+
+/********** separation ****************/
+
+#toolbar li.separation{
+    margin: 1px 0px 0px 0px;
+    width: 15px;
+    background: url('/images/separation.png') no-repeat top left;
+}
+#toolbar li.separation1{
+    margin: 1px 0px 0px 0px;
+    width: 15px;
+    background: url('/images/separation1.png') no-repeat top left;
+}
+
+
+
+
+
+
+#editor{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+/*************** footer ***********************/
+#footer{
+    margin-top: 6px;
+    background: #333;
+    text-align: center;
+    font: normal 13px Arial;
+    color: #fff;
+}
